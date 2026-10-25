@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sift</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2322c55e'/%3E%3Cpath d='M8 11h16M8 16h11M8 21h6' stroke='%23052e16' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/vendor/hljs/styles/github-dark-dimmed.min.css" id="hljs-dark" />
+    <link rel="stylesheet" href="/vendor/hljs/styles/github.min.css" id="hljs-light" disabled />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header id="top">
+      <div class="brand"><a class="home" href="/" title="All pull requests (home)"><span class="logo">⌁</span> Sift</a> <button id="btn-prs" class="ghost pr-switch" title="Switch pull request (⌘P)">⇄</button><a class="pr-ref" target="_blank" rel="noopener"></a></div>
+      <nav class="lenses" aria-label="Lenses">
+        <button data-lens="map" title="Map — where am I? (1)">Map<kbd>1</kbd></button>
+        <button data-lens="deck" title="Deck — one file at a time (2)">Deck<kbd>2</kbd></button>
+        <button data-lens="ledger" title="Ledger — table, filters, bulk triage (3)">Ledger<kbd>3</kbd></button>
+        <button data-lens="notes" title="Notes — everything you've written, across files (4)">Notes<kbd>4</kbd></button>
+      </nav>
+      <div class="progress" id="progress"></div>
+      <div class="top-actions">
+        <button id="btn-sync" title="Re-fetch the PR and detect files that changed since you reviewed them">↻ Sync</button>
+        <button id="btn-palette" title="Jump to file or command (⌘K)">⌘K</button>
+        <button id="btn-help" title="Keyboard shortcuts (?)">?</button>
+      </div>
+    </header>
+    <div id="filterbar"></div>
+    <main id="lens"></main>
+    <footer id="actionbar"></footer>
+    <div id="toasts"></div>
+    <div id="overlay" hidden></div>
+    <script src="/vendor/hljs/highlight.min.js"></script>
+    <script src="/vendor/diff.js"></script>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

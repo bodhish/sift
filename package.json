@@ -1,0 +1,22 @@
+{
+  "name": "sift-review",
+  "version": "0.1.0",
+  "description": "Sift — a local, keyboard-first workbench for reviewing very large GitHub pull requests",
+  "type": "module",
+  "bin": {
+    "sift": "./bin/sift.mjs"
+  },
+  "scripts": {
+    "start": "node bin/sift.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@babel/parser": "^7.29.11",
+    "@highlightjs/cdn-assets": "^11.12.0",
+    "diff": "^8.0.4"
+  }
+}

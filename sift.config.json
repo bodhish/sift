@@ -1,0 +1,11 @@
+{
+  "defaultRepo": "ohcnetwork/care_fe",
+  "repos": {
+    "ohcnetwork/care_fe": {
+      "repoPath": "~/code/care_fe",
+      "i18n": ["public/locale/en.json"],
+      "testDirs": ["tests"],
+      "helperDirs": ["tests/helper", "tests/support", "tests/fixtures"]
+    }
+  }
+}
